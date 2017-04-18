@@ -1,0 +1,1 @@
+> 配置bean的init和destory方法
