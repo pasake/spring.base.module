@@ -1,0 +1,25 @@
+package spring.base.module.junit;
+
+import org.junit.Assert;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+/**
+ * Created on 2017/4/18.
+ */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = {TestConfig.class})
+@ActiveProfiles("prod")
+public class JunitTest {
+    @Autowired
+    private TestBean testBean;
+
+    public void prodBean() {
+        String expected = "from production profile";
+        String actual = testBean.getContent();
+        Assert.assertEquals(expected, actual);
+    }
+}
