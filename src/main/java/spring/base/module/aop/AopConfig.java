@@ -8,7 +8,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * Created on 2017/4/16.
  */
 @Configuration
-@ComponentScan("com.aop")
+@ComponentScan("spring.base.module.aop")
 @EnableAspectJAutoProxy
 public class AopConfig {
 

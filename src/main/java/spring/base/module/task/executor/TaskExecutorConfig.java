@@ -13,7 +13,7 @@ import java.util.concurrent.Executor;
  * Created on 2017/4/18.
  */
 @Configuration
-@ComponentScan("com.task.executor")
+@ComponentScan("spring.base.module.task.executor")
 @EnableAsync
 public class TaskExecutorConfig implements AsyncConfigurer {
 

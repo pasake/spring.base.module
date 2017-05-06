@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * Created on 2017/4/18.
  */
 @Configuration
-@ComponentScan("com.event")
+@ComponentScan("spring.base.module.event")
 public class Config {
 }

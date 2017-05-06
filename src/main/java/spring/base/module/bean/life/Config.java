@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * Created on 2017/4/17.
  */
 @Configuration
-@ComponentScan("com.bean.life")
+@ComponentScan("spring.base.module.bean.life")
 public class Config {
 
     @Bean(initMethod = "init", destroyMethod = "destory")
